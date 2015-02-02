@@ -44,12 +44,6 @@ d3.tsv('data.tsv', function(error, data) {
 
     var myChart = d3.select( '#barchart' ).append( 'svg' )
           .style('background', '#E7E0CB')
-//   .attr("width", '100%')
-//    .attr("height", '100%')
-//    .attr('viewBox','0 0 '+Math.min(width,height)+' '+Math.min(width,height))
-//    .attr('preserveAspectRatio','xMinYMin')
-//    .append("g")
-//    .attr("transform", "translate(" + Math.min(width,height) / 2 + "," + Math.min(width,height) / 2 + ")")
           .attr( 'width', width + margin.left + margin.right )
           .attr( 'height', height + margin.top + margin.bottom )
           .append( 'g' )
@@ -178,16 +172,14 @@ var pie = d3.layout.pie()
         .value( function ( d )
         {
            return d.value;
-        } )
+        } );
 
 var arc = d3.svg.arc()
         .outerRadius( radius )
 
 var myChart = d3.select( '#piechart' ).append( 'svg' )
-                .attr( 'width', '100%' )
-        .attr( 'height', '100%' )
-    .attr('viewBox','0 0 '+Math.min(width,height)+' '+Math.min(width,height))
-    .attr('preserveAspectRatio','xMinYMin')
+        .attr( 'width', width )
+        .attr( 'height', height )
         .append( 'g' )
         .attr( 'transform', 'translate(' + ( width - radius ) + ', ' + ( height - radius ) + ' )' )
         .selectAll( 'path' ).data( pie( piedata ) )

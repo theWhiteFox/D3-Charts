@@ -45,3 +45,27 @@ a:active {
    margin:1% 2.4%;
 }
 
+#barchart, #piechart{
+   float:left;
+   padding:20px;
+   clear:right; 
+   margin-left:20px;  
+}
+
+footer{
+   margin-top:32%;
+   clear:both;
+   background:white;
+   text-align: center;
+}
+
+#piechart
+{
+   margin-top: 10px;
+   background-color: white;
+}
+
+#barchart
+{
+   background-color: white;
+}
