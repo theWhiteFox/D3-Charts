@@ -59,7 +59,7 @@ footer{
    text-align: center;
 }
 
-#piechart
+/*#piechart
 {
    margin-top: 10px;
    background-color: white;
@@ -68,4 +68,63 @@ footer{
 #barchart
 {
    background-color: white;
+}*/
+
+#chart
+{   
+   background-color: #F5F2EB;
+   border: 1px solid #CCC;  
+}
+.bar 
+{
+   fill: purple;
+   shape-rendering: crispEdges;
+}
+.bar-label
+{
+   fill: #000;   
+   text-anchor:middle;
+   font-size: 18px;
+}
+.axis path, .axis line
+{
+   fill: none;
+   stroke: #000;
+   shape-rendering: crispEdges;
+}
+.gridline path, .gridline line
+{
+  fill: none;
+  stroke: #CCC;
+  shape-rendering: crispEdges;
+}
+.trendline
+{
+  fill: none;
+  stroke: #CCC;
+  stroke-width: 4px;
+  stroke-dasharray: 10;
+}
+.area
+{
+  opacity: 0.25;
+  fill: red;
+  stroke: red;
+  stroke-width: 1px;
+
+}
+.donut
+{
+  opacity: 0.1;
+}
+
+.axis-label
+{
+  text-anchor: middle;
+}
+
+.chart-header
+{
+  text-transform: capitalize;
+  font-size: 125%;
 }
