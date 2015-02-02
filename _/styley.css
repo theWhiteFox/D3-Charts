@@ -1,0 +1,47 @@
+/* 
+    Created on : 19-Jan-2015, 22:42:45
+    Author     : Stephen
+*/
+/* unvisited link */
+a:link {
+   color: #A57706;    
+}
+
+/* visited link */
+a:visited {
+   color: #738A05;
+}
+
+/* mouse over link */
+a:hover {
+   color: #C61C6F;    
+   text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+   color: #259286;
+}
+
+#user_list
+{
+
+   height: 100%;
+   width:100%;
+   -webkit-column-count: 3;
+   -moz-column-count: 3;
+   column-count: 3;
+   margin: 20px 0px;
+
+}
+#user_list li
+{
+
+   font-size: .95em;
+   display: inline-block;    
+}
+#buttons
+{
+   margin:1% 2.4%;
+}
+
