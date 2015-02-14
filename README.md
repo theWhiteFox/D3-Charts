@@ -1,2 +1,2 @@
 # D3.js JavaScript Charts
-Bootstrap
+basic Bootstrap page with 3D Charts. 
